@@ -35,4 +35,4 @@ Don't worry about not being able to finish. As a guide, this shouldn't take more
 
 1. This is a pretty bare-bones app. Consider adding an app-wide theme, and controlling the style and colour of UI elements with that theme. 
 1. The designer neglected to create a button for deleting an item from the cart. How would you handle this, _within_ the current confines of the design? (Hint: don't create a new button for this... there must be _some_ set of conditions where an item is removed from the cart as the user would expect it to.)
-1. **_There's a bug!!_** About one time out of a few million, when you click the Increment button for one line item, it increments the quantity for A DIFFERENT line item. There's an easy fix; can you find it?
+1. We should probably do some tests, so that new features in the future won't break existing functionality.
