@@ -60,6 +60,7 @@ class CartControls extends StatelessWidget {
   /// Handler for Add Item pressed
   void _addItemPressed(BuildContext context) {
     /// mostly unique cartItemId.
+    /// don't change this; not important for this test
     int nextCartItemId = Random().nextInt(10000);
     String nextCartItemName = 'A cart item';
     int nextCartItemQuantity = 1;
@@ -122,7 +123,8 @@ class ListOfCartItems extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                // TODO: Widget for the line item name and current quantity. Current quantity should update whenever a change occurs.
+                // TODO: Widget for the line item name AND current quantity, eg "Item name x 4".
+                //  Current quantity should update whenever a change occurs.
                 // TODO: Button to handle incrementing cart quantity. Handler is above.
                 // TODO: Button to handle decrementing cart quantity. Handler is above.
               ],
